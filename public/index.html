@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Mystagram</title>
+        <link rel="stylesheet" href="./index.css">   
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    </head>
+<body>
+    <h1>Mystagram</h1>
+    <div class="a">
+    <input type="text" class="search" placeholder="Search photos"/>
+    </div>
+    <div class="controls">
+        <label for="spacing">Spacing:</label>
+        <input
+        id="spcing"
+        type="range"
+        name="spacing"
+        min="0"
+        max="100"
+        value="10"
+        data-sizing="px"
+            />
+        <label for="blur">blur:</label>
+        <input
+        id="blur"
+        type="range"
+        name="blur"
+        min="0"
+        max="25"
+        value="0"
+        data-sizing="px"
+            />
+        <label for="color">color:</label>
+        <input
+        id="color"
+        type="color"
+        name="base"
+        value="#000000"
+            />
+            <div class="mode">
+                <input type="checkbox" class="checkbox" id="checkbox"/>
+                <label for="checkbox" class="label">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+    </div>
+    <div class="gallery"></div>
+    <script src="./js/index.js"></script>
+
+</body>
+</html>    
